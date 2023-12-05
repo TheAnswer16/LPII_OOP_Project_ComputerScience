@@ -10,7 +10,11 @@ class Aluno(Pessoa):
     
 
     def get_interno(self):
-        return self.interno
+        
+        if self.interno == 1:
+            return "Sim"
+        else:
+            return "Nao"
 
     def set_interno(self, interno):
         self.interno = interno
